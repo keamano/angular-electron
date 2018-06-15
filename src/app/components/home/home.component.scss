@@ -1,17 +1,57 @@
+
 .container {
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
+  margin-left: 60px;
+
+  // flex
+  display: flex;
+  // align-items: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // align-content: stretch;
+  align-content: flex-start;
+  // align-content: center;
+  // align-content: space-between;
+  // align-content: space-around;
+  
   background: url(../../../assets/background.jpg) no-repeat center fixed;
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size: cover; /* version standardisée */
+}
 
-  .title {
-    color: white;
-    margin:0;
-    padding:50px 20px;
-  }
+// カード
+.example-card {
+  margin: 10px;
+  max-width: 200px;
+}
 
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+// ボタン
+.example-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+// フローティングボタン
+// .floating_button {}
+.float {
+  position:fixed;
+  // width:60px;
+  // height:60px;
+  bottom:40px;
+  right:40px;
+  // background-color:#0C9;
+  // color:#FFF;
+  // border-radius:50px;
+  // text-align:center;
+  // box-shadow: 2px 2px 3px #999;
 }
